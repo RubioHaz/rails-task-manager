@@ -1,3 +1,34 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// index
+.list {
+  font-size: 20px;
+  list-style-type: none;
+  line-height: 1.8;
+  .list-item {
+    text-decoration: none;
+  }
+  .fass {
+    color: #555;
+  }
+}
+
+// show
+.task-title {}
+.task-details {
+  background-color: #ccc;
+  border: 1px solid #555;
+  border-radius: 5px;
+  min-height: 10vh;
+  padding: 20px;
+  margin: 20px 0;
+}
+.task-completed {}
+.task-footer {}
+
+// _form
+.checkbox-label {
+  margin: 0 5px;
+}

@@ -1,0 +1,19 @@
+<div class='container'>
+  <h1 class='task-title'>
+    <%= @task.title %>
+  </h1>
+  <div class='task-details'>
+    <%= @task.details %>
+  </div>
+  <div class='task-completed'>
+    <% if @task.completed? %>
+      <%= fa_icon 'check-square' %> This task has been done!
+    <% else %>
+      <%= fa_icon 'square' %> This task is not yet completed
+    <% end %>
+  </div>
+  <hr>
+  <div class='footer'>
+  <%= link_to 'Go back to Tasks', tasks_path %>
+  </div>
+</div>
